@@ -1,0 +1,13 @@
+<h1>New project</h1>
+<%= simple_form_for @project do |f| %>
+  <%= f.input :name %>
+  <%= f.input :url %>
+  <%= f.input :github %>
+  <%= f.input :technologies %>
+  <%= f.input :description %>
+  <%= f.input :difficulties %>
+  <%= f.input :solution %>
+  <%= f.input :features %>
+  <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+  <%= f.button :submit, class: "btn-light" %>
+<% end %>
