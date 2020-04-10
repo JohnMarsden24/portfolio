@@ -1,11 +1,13 @@
 
+<%= image_tag "image1.jpg", alt: "alttext", class: "my-image" %>
 
+<h1>test</h1>
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
 <% @project.photos.each_with_index do |photo, index| %>
   <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" >
-    <%= cl_image_tag photo.key, class: "my-image" %>
+    <%= image_tag "image1.jpg", alt: "alttext", class: "my-image" %>
   </div>
 <% end %>
   </div>
