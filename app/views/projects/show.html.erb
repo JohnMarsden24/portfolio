@@ -1,3 +1,5 @@
+<%= render "projects/slideshow" %>
+
 <h1><%= @project.name %></h1>
 <h4>links</h4>
 <%= link_to @project.url, @project.url %>
@@ -30,7 +32,3 @@
     </li>
   <% end %>
 </ul>
-<h4>Project photos</h4>
-<% @project.photos.each do |photo| %>
-  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
