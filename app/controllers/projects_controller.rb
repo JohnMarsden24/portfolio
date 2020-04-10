@@ -16,11 +16,25 @@ class ProjectsController < ApplicationController
   def create
     project = Project.new(strong_params)
     if project.save
-      redirect_to projects_path
+      redirect_to project_path
     else
       render :new
     end
   end
+
+  def edit
+    find_project
+  end
+
+  def update
+    project = find_project
+    if project.update(strong_params)
+      redirect_to project_path
+    else
+      render :edit
+    end
+  end
+
 
   private
 
