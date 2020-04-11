@@ -1,0 +1,38 @@
+// CENTERING
+
+.center {
+  margin: 0 auto;
+}
+
+// STRIP PADDING AND MARGIN
+
+.no-pm {
+  margin: 0;
+  padding: 0;
+}
+
+.no-m {
+  margin: 0;
+}
+
+
+// MARGIN
+
+// m = margin / s = square / r = recentangle / t = top / r = right / b = bottom / l = left / 1-4 in 8px intervals
+
+.mr1 {
+  margin-right: 8px;
+}
+
+.mtb2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+// PADDING
+
+// p = padding / s = square / r = recentangle / t = top / r = right / b = bottom / l = left / 1-4 in 8px intervals
+
+.pr2 {
+  padding-right: 32px;
+}
