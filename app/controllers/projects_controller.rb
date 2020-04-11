@@ -16,7 +16,7 @@ class ProjectsController < ApplicationController
   def create
     project = Project.new(strong_params)
     if project.save
-      redirect_to project_path
+      redirect_to project_path(project)
     else
       render :new
     end
@@ -29,7 +29,7 @@ class ProjectsController < ApplicationController
   def update
     project = find_project
     if project.update(strong_params)
-      redirect_to project_path
+      redirect_to project_path(project)
     else
       render :edit
     end
@@ -43,6 +43,6 @@ class ProjectsController < ApplicationController
   end
 
   def strong_params
-    params.require(:project).permit(:name, :url, :github, :technologies, :description, :difficulties, :solution, :features, photos: [])
+    params.require(:project).permit(:name, :color, :url, :github, :technologies, :description, :difficulties, :solution, :features, photos: [])
   end
 end

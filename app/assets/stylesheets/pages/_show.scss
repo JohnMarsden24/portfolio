@@ -1,7 +1,9 @@
+.project-list-item {
+  margin: 8px 0;
+}
+
 .title {
   display: inline-block;
-  padding-right: 8px;
-  border-bottom: 8px solid $pink;
 }
 
 .project-title {
@@ -19,4 +21,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .project-list-item {
+    margin: 0;
+  }
 }
+
