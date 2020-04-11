@@ -1,41 +1,38 @@
 <div class="page-container">
-
   <%= render "projects/carousel" %>
-
   <div class="project-text-container center off-black">
-    <div class="d-flex justify-content-between align-items-center flex-wrap mtb2">
-    <h2 class="bold pr2"><%= @project.name %></h2>
-    <div>
-      <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe , @project.url, class: "mr1 no-d" %>
-      <%= link_to "<i class='fab fa-github'></i> View source".html_safe, @project.github, class: "no-d" %>
-    </div>
-
+    <div class="project-title mtb2">
+      <h2 class="bold dark-blue back-shadow title"><%= @project.name %></h2>
+      <div>
+        <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe , @project.url, class: "mr1 no-d", target: "_blank" %>
+        <%= link_to "<i class='fab fa-github'></i> View source".html_safe, @project.github, class: "no-d", target: "_blank" %>
+      </div>
     </div>
     <p class="taj">
       <%= @project.description %>
     </p>
     <div class="row">
       <div class="col-md-8 taj">
-        <h4 class="bolder">Project difficulties</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project difficulties</h4>
         <p>
           <%= @project.difficulties %>
         </p>
-        <h4 class="bolder">Project solution</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project solution</h4>
         <p>
           <%= @project.solution %>
         </p>
       </div>
       <div class="col-12 col-md-4">
-          <h4 class="bolder">Technology used</h4>
-        <ul>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Languages used</h4>
+        <ul class="project-list">
           <% @project.technologies.each do |technology| %>
             <li>
               <%= technology %>
             </li>
           <% end %>
         </ul>
-        <h4 class="bolder">Project features</h4>
-        <ul>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project features</h4>
+        <ul class="project-list">
           <% @project.features.each do |feature| %>
             <li>
               <%= feature %>
@@ -43,12 +40,8 @@
           <% end %>
         </ul>
       </div>
-
     </div>
-    <%= link_to "Back to projects", root_path, class: "no-d"  %>
-
+    <%= link_to "<i class='fas fa-long-arrow-alt-left'></i> Back to projects".html_safe, root_path, class: "no-d"  %>
   </div>
-
-
 </div>
 
