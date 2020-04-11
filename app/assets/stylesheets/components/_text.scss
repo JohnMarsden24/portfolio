@@ -1,0 +1,25 @@
+.tac {
+  text-align: center;
+}
+
+.taj {
+  text-align: justify;
+}
+
+.off-black {
+  color: $black;
+}
+
+.bolder {
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.no-d {
+  &:hover {
+    text-decoration: none;
+  }
+}

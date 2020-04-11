@@ -1,0 +1,20 @@
+.page-container {
+  margin-top: 10vh;
+  padding: 32px 64px;
+}
+
+.project-text-container {
+  width: 60%;
+}
+
+@media(max-width: 992px) {
+  .project-text-container {
+  width: 80%;
+  }
+}
+
+@media(max-width: 576px) {
+  .page-container {
+    padding: 8px;
+  }
+}
