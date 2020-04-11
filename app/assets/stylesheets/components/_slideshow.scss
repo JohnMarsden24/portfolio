@@ -17,7 +17,11 @@
 }
 
 .my-image {
-  max-width: 50%;
+  padding-top: 27%;
+  width: 50%;
+  background-size:100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .carousel-control-prev-icon {
@@ -30,7 +34,8 @@
 
 @media(max-width: 992px) {
   .my-image {
-    max-width: 80%;
+    padding-top: 54%;
+    width: 100%;
   }
 
   // .my-image {
