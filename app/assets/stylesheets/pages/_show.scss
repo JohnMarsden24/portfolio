@@ -18,8 +18,7 @@
   }
 
   .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    columns: 2;
   }
 
   .project-list-item {
