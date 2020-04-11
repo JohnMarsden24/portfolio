@@ -6,6 +6,16 @@
   background-repeat: no-repeat;
 }
 
+.carousel-control-prev {
+  width: 10%;
+  left: 10%;
+}
+
+.carousel-control-next {
+  width: 10%;
+  right: 10%;
+}
+
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%313638' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -16,7 +26,17 @@
 
 @media(max-width: 992px) {
   .carousel-slide-photo  {
-    padding-top: 43.2%;
-    width: 80%;
+    padding-top: 48.6%;
+    width: 90%;
+  }
+
+  .carousel-control-prev {
+    width: 5%;
+    left: 0;
+  }
+
+.carousel-control-next {
+    width: 5%;
+    right: 0;
   }
 }

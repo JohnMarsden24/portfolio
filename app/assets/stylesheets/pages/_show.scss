@@ -1,3 +1,22 @@
-ul {
-  list-style-type: circle;
+.title {
+  display: inline-block;
+  padding-right: 8px;
+  border-bottom: 8px solid $pink;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 768px){
+  .project-title {
+    display: block;
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
