@@ -1,10 +1,10 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
-<% @project.photos.each_with_index do |photo, index| %>
-  <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" >
-    <%= cl_image_tag photo.key, class: "my-image" %>
-  </div>
-<% end %>
+    <% @project.photos.each_with_index do |photo, index| %>
+      <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" >
+        <%= cl_image_tag photo.key, class: "d-block w-100" %>
+      </div>
+    <% end %>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
