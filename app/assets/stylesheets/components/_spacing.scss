@@ -20,6 +20,10 @@
 
 // m = margin / s = square / r = recentangle / t = top / r = right / b = bottom / l = left / 1-4 in 8px intervals
 
+.mb2 {
+  margin-bottom: 16px;
+}
+
 .mr1 {
   margin-right: 8px;
 }
@@ -28,13 +32,20 @@
   padding-right: 64px;
 }
 
+
 .mtb2 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 
-
-
 // PADDING
 
 // p = padding / s = square / r = recentangle / t = top / r = right / b = bottom / l = left / 1-4 in 8px intervals
+
+.pr1 {
+  padding-right: 8px;
+}
+
+.pb2 {
+  padding-bottom: 16px;
+}

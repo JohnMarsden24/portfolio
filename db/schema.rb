@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2020_04_09_172420) do
 
   create_table "projects", force: :cascade do |t|
     t.string "name"
+    t.string "color"
     t.string "url"
     t.string "github"
     t.text "technologies", default: [], array: true
