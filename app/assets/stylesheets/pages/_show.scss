@@ -18,7 +18,10 @@
   }
 
   .project-list {
-    columns: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 24px;
+    margin: 0;
   }
 
   .project-list-item {
