@@ -3,7 +3,7 @@
 </div>
 
 <div class="page-section bg-dark-blue">
-  <div class="max-width-90 center">
+  <div class="text-container center">
     <h2 class="bolder page-header text-dark-blue">PROJECTS</h2>
     <div class="grid-container">
       <%= render @projects %>
@@ -11,25 +11,16 @@
   </div>
 </div>
 <div class="page-section taj">
-  <div class="max-width-90 center">
+  <div class="text-container center">
     <h2 class="bolder page-header text-white">ABOUT</h2>
-    <p>Mauris lacinia a arcu id aliquet. Nulla facilisi. Nulla viverra elementum commodo. Vivamus arcu eros, ultrices vitae ullamcorper non, consectetur ut dui. Duis posuere nisi purus, a sollicitudin turpis convallis nec. Nullam a tempor nisl. Sed ut eleifend nisi. Praesent aliquet, metus ut euismod varius, tortor mauris eleifend purus, eget facilisis libero dolor eu magna. Duis congue urna urna, non hendrerit arcu faucibus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus at finibus leo. Ut nec turpis id odio molestie ornare. Cras eget vulputate nulla. In faucibus luctus massa, eget egestas velit finibus vel. Curabitur at magna lorem. Etiam ultrices eros sed dui tristique, a porttitor sem faucibus.</p>
+    <p class="text-off-black">Mauris lacinia a arcu id aliquet. Nulla facilisi. Nulla viverra elementum commodo. Vivamus arcu eros, ultrices vitae ullamcorper non, consectetur ut dui. Duis posuere nisi purus, a sollicitudin turpis convallis nec. Nullam a tempor nisl. Sed ut eleifend nisi. Praesent aliquet, metus ut euismod varius, tortor mauris eleifend purus, eget facilisis libero dolor eu magna. Duis congue urna urna, non hendrerit arcu faucibus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus at finibus leo. Ut nec turpis id odio molestie ornare. Cras eget vulputate nulla. In faucibus luctus massa, eget egestas velit finibus vel. Curabitur at magna lorem. Etiam ultrices eros sed dui tristique, a porttitor sem faucibus.</p>
   </div>
 </div>
 <div class="page-section bg-dark-blue taj">
-  <div class="max-width-90 center">
+  <div class="text-container center">
     <h2 class="bolder page-header text-dark-blue">CONTACT</h2>
     <div class="text-white">
-      <form action="john.marsden24@gmail.com" method="post" enctype="text/plain">
-      Name:<br>
-      <input type="text" name="name"><br>
-      E-mail:<br>
-      <input type="text" name="mail"><br>
-      Comment:<br>
-      <input type="text" name="comment" size="50"><br><br>
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
-      </form>
+      <%= render "contacts/new", contact: @contact %>
 
     </div>
   </div>
