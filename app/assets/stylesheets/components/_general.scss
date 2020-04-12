@@ -1,6 +1,11 @@
-.bottom-border {
+.bottom-border-dark-blue {
   padding-bottom: 8px;
   border-bottom: 2px solid $dark-blue;
+}
+
+.bottom-border-white {
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
 }
 
 .my-shadow {
