@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
+    @contact = Contact.new
   end
 
   def new
