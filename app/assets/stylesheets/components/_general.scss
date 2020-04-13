@@ -1,9 +1,13 @@
-.bottom-border {
+.bottom-border-dark-blue {
   padding-bottom: 8px;
   border-bottom: 2px solid $dark-blue;
+}
+
+.bottom-border-white {
+  padding-bottom: 8px;
+  border-bottom: 2px solid white;
 }
 
 .my-shadow {
   box-shadow: 0 4px 8px rgba(0,0,0,.3);
 }
-

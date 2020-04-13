@@ -1,9 +1,5 @@
 class ContactsController < ApplicationController
 
-  def index
-    @contact = Contact.new(params[:contact])
-  end
-
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
@@ -13,9 +9,11 @@ class ContactsController < ApplicationController
         @contact = Contact.new
         format.html { render 'index'}
         format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
+        redirect_to root_path
       else
         format.html { render 'index' }
         format.js   { flash.now[:error] = @message = "Message did not send." }
+        redirect_to root_path
       end
     end
   end

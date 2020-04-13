@@ -32,10 +32,13 @@
   padding-right: 64px;
 }
 
-
 .mtb2 {
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.past-nav {
+  margin-top: 10vh;
 }
 
 // PADDING
@@ -48,4 +51,30 @@
 
 .pb2 {
   padding-bottom: 16px;
+}
+
+.plr8 {
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+.ps8 {
+  padding: 64px;
+}
+
+.ptb4 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media(max-width: 992px) {
+  .ps8 {
+    padding: 32px;
+  }
+}
+
+@media(max-width: 576px) {
+  .ps8 {
+    padding: 32px 16px;
+  }
 }
