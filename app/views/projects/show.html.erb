@@ -1,9 +1,9 @@
 
-<div class="page-container past-nav">
+<div class="page-container">
   <%= render "projects/carousel" %>
-  <div class="text-container center text-off-black">
+  <div class="project-text-container center off-black">
     <div class="project-title mb2">
-      <h2 class="bold text-dark-blue pr1 title" style="border-bottom: 8px solid <%= @project.color %>"><%= @project.name %></h2>
+      <h2 class="bold dark-blue pr1 title" style="border-bottom: 8px solid <%= @project.color %>"><%= @project.name %></h2>
       <div>
         <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe , @project.url, class: "mr1 no-d", target: "_blank" %>
         <%= link_to "<i class='fab fa-github'></i> View source".html_safe, @project.github, class: "no-d", target: "_blank" %>
@@ -14,17 +14,17 @@
         </p>
     <div class="row">
       <div class="col-md-8 taj">
-        <h4 class="bolder text-dark-blue mtb2 bottom-border-dark-blue">Project difficulties</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project difficulties</h4>
         <p>
           <%= @project.difficulties %>
         </p>
-        <h4 class="bolder text-dark-blue mtb2 bottom-border-dark-blue">Project solution</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project solution</h4>
         <p class="no-m">
           <%= @project.solution %>
         </p>
       </div>
       <div class="col-12 col-md-4">
-        <h4 class="bolder text-dark-blue mtb2 bottom-border-dark-blue">Languages used</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Languages used</h4>
         <ul class="project-list">
           <% @project.technologies.each do |technology| %>
             <li class="project-list-item">
@@ -32,7 +32,7 @@
             </li>
           <% end %>
         </ul>
-        <h4 class="bolder text-dark-blue mtb2 bottom-border-dark-blue">Project features</h4>
+        <h4 class="bolder dark-blue mtb2 bottom-border">Project features</h4>
         <ul class="project-list no-m">
           <% @project.features.each do |feature| %>
             <li class="project-list-item">

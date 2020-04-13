@@ -36,6 +36,7 @@ class ProjectsController < ApplicationController
     end
   end
 
+
   private
 
   def find_project

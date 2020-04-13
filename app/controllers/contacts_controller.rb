@@ -4,6 +4,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
+      raise
       flash.now[:error] = nil
   redirect_to root_path, notice: 'Message sent successfully'
     else
