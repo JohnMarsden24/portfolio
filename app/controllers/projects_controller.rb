@@ -3,7 +3,6 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
-    @contact = Contact.new
   end
 
   def new
@@ -35,6 +34,7 @@ class ProjectsController < ApplicationController
       render :edit
     end
   end
+
 
   private
 

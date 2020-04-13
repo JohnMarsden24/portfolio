@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'contacts/new'
   root to: 'projects#index'
   resources :projects
-  resources :contacts, only: [:new, :create]
+  resources :contacts, only: [:index, :new, :create]
 
   devise_for :users, skip: [:sessions, :registrations, :passwords]
 
