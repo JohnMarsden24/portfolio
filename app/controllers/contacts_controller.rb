@@ -1,15 +1,22 @@
 class ContactsController < ApplicationController
 
+  def index
+    @contact = Contact.new(params[:contact])
+  end
+
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-    if @contact.deliver
-      raise
-      flash.now[:error] = nil
-  redirect_to root_path, notice: 'Message sent successfully'
-    else
-      flash.now[:error] = 'Cannot send message'
-      render :new
+    respond_to do |format|
+      if @contact.deliver
+        # re-initialize Contact object for cleared form
+        @contact = Contact.new
+        format.html { render 'index'}
+        format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
+      else
+        format.html { render 'index' }
+        format.js   { flash.now[:error] = @message = "Message did not send." }
+      end
     end
   end
 end
