@@ -1,26 +1,12 @@
-<div class="page-section">
-  <h1 class="bolder text-dark-blue tac">JOHN MARSDEN - FULL STACK WEB DEVELOPER</h1>
+<div class="tab-content tab-container center" id="myTabContent">
+  <div class="tab-pane fade show active" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+    <%= render "projects" %>
+  </div>
+  <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+    <%= render "about" %>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <%= render "contact" %>
+  </div>
 </div>
 
-<div class="page-section bg-dark-blue">
-  <div class="text-container center">
-    <h2 class="bolder page-header text-dark-blue">PROJECTS</h2>
-    <div class="grid-container">
-      <%= render @projects %>
-    </div>
-  </div>
-</div>
-<div class="page-section taj">
-  <div class="text-container center">
-    <h2 class="bolder page-header text-white">ABOUT</h2>
-    <p class="text-off-black">Mauris lacinia a arcu id aliquet. Nulla facilisi. Nulla viverra elementum commodo. Vivamus arcu eros, ultrices vitae ullamcorper non, consectetur ut dui. Duis posuere nisi purus, a sollicitudin turpis convallis nec. Nullam a tempor nisl. Sed ut eleifend nisi. Praesent aliquet, metus ut euismod varius, tortor mauris eleifend purus, eget facilisis libero dolor eu magna. Duis congue urna urna, non hendrerit arcu faucibus ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus at finibus leo. Ut nec turpis id odio molestie ornare. Cras eget vulputate nulla. In faucibus luctus massa, eget egestas velit finibus vel. Curabitur at magna lorem. Etiam ultrices eros sed dui tristique, a porttitor sem faucibus.</p>
-  </div>
-</div>
-<div class="page-section bg-dark-blue taj">
-  <div class="text-container center">
-    <h2 class="bolder page-header text-dark-blue">CONTACT</h2>
-    <div class="text-white">
-      <%= render "contacts/contact_form", contact: @contact %>
-    </div>
-  </div>
-</div>
