@@ -4,31 +4,35 @@
   grid-gap: 64px;
 }
 
-.page-container {
-  padding: 32px 64px;
+.tab-container {
+  margin-top: 10vh;
+  width: 80%;
+  padding-top: 16px;
+  padding-bottom: 32px;
 }
 
-.text-container {
+.show-text-container {
   width: 60%;
 }
 
 @media(max-width: 992px) {
-  .text-container {
-  width: 90%;
+  .show-text-container {
+    width: 100%;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
+
+  .tab-container {
+    width: 90%;
+  }
 }
 
 @media(max-width: 576px) {
-  .page-container {
-    padding: 8px;
-  }
-
   .grid-container {
     grid-gap: 32px 16px;
   }
+
 }
