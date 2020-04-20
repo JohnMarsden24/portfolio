@@ -11,12 +11,12 @@
   padding-bottom: 32px;
 }
 
-.show-text-container {
+.text-container {
   width: 60%;
 }
 
 @media(max-width: 992px) {
-  .show-text-container {
+  .text-container {
     width: 100%;
   }
 
@@ -27,6 +27,8 @@
 
   .tab-container {
     width: 90%;
+    padding-top: 8px;
+    padding-bottom: 16px;
   }
 }
 
