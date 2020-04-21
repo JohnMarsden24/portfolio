@@ -36,6 +36,10 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def download_pdf
+    send_file "#{Rails.root}/app/assets/documents/JohnMarsdenCV.pdf", type: "application/pdf", x_sendfile: true
+  end
+
   private
 
   def find_project
