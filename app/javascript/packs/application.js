@@ -14,7 +14,4 @@ import { navbarDropdownUpdate } from '../components/navbarDropdownUpdate';
 document.addEventListener('turbolinks:load', () => {
   navbarLinkUpdate();
   navbarDropdownUpdate();
-
-
-
 });

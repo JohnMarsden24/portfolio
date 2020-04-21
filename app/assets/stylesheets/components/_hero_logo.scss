@@ -1,0 +1,43 @@
+.hero-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 5rem;
+  }
+
+  h3 {
+    color: $dark-blue;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  img {
+    max-height: 80vh;
+    max-width: 100%;
+  }
+}
+
+.links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+@media(max-width: 768px) {
+  .hero-logo {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .links {
+    padding-bottom: 16px;
+  }
+}
