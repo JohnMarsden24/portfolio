@@ -1,4 +1,9 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <% @project.photos.each_with_index do |photo, index| %>
+      <li data-target="#carouselExampleFade" data-slide-to="<%= index %>" class="<%= @project.get_first_item(index) %>">HEY</li>
+    <% end %>
+  </ol>
   <div class="carousel-inner pb2">
     <% @project.photos.each_with_index do |photo, index| %>
       <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" >
@@ -7,10 +12,4 @@
       </div>
     <% end %>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
 </div>
