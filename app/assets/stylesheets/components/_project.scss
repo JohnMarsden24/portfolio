@@ -1,0 +1,8 @@
+.project-card-image {
+  width: 100%;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
