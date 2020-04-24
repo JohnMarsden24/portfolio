@@ -20,6 +20,22 @@ body {
   display: none;
 }
 
+.hover-medium {
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.hover-big {
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 @media(max-width: 576px) {
   .page-header-mob {
     display: block;
