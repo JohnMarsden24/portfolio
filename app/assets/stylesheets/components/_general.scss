@@ -24,7 +24,7 @@ body {
   transition: .3s;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 }
 
@@ -39,5 +39,11 @@ body {
 @media(max-width: 576px) {
   .page-header-mob {
     display: block;
+  }
+
+  .hover-medium, .hover-big {
+    &:hover {
+      transform: none;
+    }
   }
 }
