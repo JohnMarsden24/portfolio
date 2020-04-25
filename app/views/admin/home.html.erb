@@ -1,13 +1,15 @@
-<div class="text-container center text-black">
-  <p><%= link_to "New project", new_project_path, class: "no-d" %></p>
-  <ul>
-    <% @projects.each do |project| %>
-      <li>
-        <%= project.name %>
-        <%= link_to "edit", edit_project_path(project), class: "no-d" %>
-        <%= link_to "delete", project_path(project), method: :delete, remote: true, data: {confirm: "Are you sure you want to delete?"}, class: "no-d"  %>
-      </li>
-    <%end %>
+<div class="tab-container center">
+  <div class="text-container text-black">
+    <p><%= link_to "New project", new_project_path, class: "no-d" %></p>
+    <ul>
+      <% @projects.each do |project| %>
+        <li>
+          <%= project.name %>
+          <%= link_to "edit", edit_project_path(project), class: "no-d" %>
+          <%= link_to "delete", project_path(project), method: :delete, remote: true, data: {confirm: "Are you sure you want to delete?"}, class: "no-d"  %>
+        </li>
+      <%end %>
 
-  </ul>
+    </ul>
+  </div>
 </div>
