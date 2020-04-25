@@ -1,17 +1,13 @@
 class ProjectsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show, :download_pdf]
-
-  def index
-    @projects = Project.all
-    @contact = Contact.new
-  end
+  skip_before_action :authenticate_user!, only: :show
+  before_action :admin, except: :show
+  before_action :find_project, only: [ :show, :edit, :destroy]
 
   def new
     @project = Project.new
   end
 
   def show
-    find_project
   end
 
   def create
@@ -24,7 +20,6 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    find_project
   end
 
   def update
@@ -36,11 +31,18 @@ class ProjectsController < ApplicationController
     end
   end
 
-  def download_pdf
-    send_file "#{Rails.root}/app/assets/documents/JohnMarsdenCV.pdf", type: "application/pdf", x_sendfile: true
+  def destroy
+    @project.destroy
+    redirect_to admin_home_path
   end
 
   private
+
+  def admin
+    unless current_user.admin
+      redirect_to root_path
+    end
+  end
 
   def find_project
     @project = Project.find(params[:id])
