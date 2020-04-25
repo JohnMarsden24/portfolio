@@ -37,6 +37,7 @@ gem 'simple_form'
 gem 'cloudinary', '~> 1.12.0'
 gem 'mail_form'
 gem 'jquery-rails'
+gem 'friendly_id', '~> 5.2.4'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'
