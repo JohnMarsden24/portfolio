@@ -45,7 +45,7 @@ class ProjectsController < ApplicationController
   end
 
   def find_project
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:slug])
   end
 
   def strong_params

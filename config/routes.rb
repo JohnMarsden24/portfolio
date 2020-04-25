@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'pages#index'
   get "/admin_home", to: "admin#home"
   get 'download_pdf', to: "pages#download_pdf"
-  resources :projects
+  resources :projects, param: :slug
   resources :contacts, only: [:index, :new, :create]
 
   devise_for :users, skip: [:sessions, :registrations, :passwords]
