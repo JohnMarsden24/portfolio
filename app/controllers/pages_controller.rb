@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :index, :download_pdf ]
+  skip_before_action :authenticate_user!, only: [ :home, :about , :download_pdf ]
 
   def home
   end
