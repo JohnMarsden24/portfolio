@@ -1,9 +1,10 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :download_pdf ]
 
-  def index
-    @projects = Project.all
-    @contact = Contact.new
+  def home
+  end
+
+  def about
   end
 
   def download_pdf

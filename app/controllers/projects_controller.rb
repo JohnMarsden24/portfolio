@@ -1,7 +1,11 @@
 class ProjectsController < ApplicationController
-  skip_before_action :authenticate_user!, only: :show
-  before_action :admin, except: :show
+  skip_before_action :authenticate_user!, only: [ :show, :index ]
+  before_action :admin, except: [ :show, :index ]
   before_action :find_project, only: [ :show, :edit, :destroy]
+
+  def index
+    @projects = Project.all
+  end
 
   def new
     @project = Project.new

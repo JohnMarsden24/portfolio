@@ -11,17 +11,23 @@
      <li class="nav-item-burger dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
       <div class="dropdown-menu dropdown-menu-right">
-        <% if request.path == "/" %>
-          <%= render "shared/burger_tab_links" %>
-        <% else %>
-          <%= render "shared/burger_external_links" %>
-        <% end %>
+        <%= link_to "Home", root_path, class: "dropdown-item home"  %>
+        <%= link_to "Projects", projects_path, class: "dropdown-item projects" %>
+        <%= link_to "About", about_path, class: "dropdown-item about"  %>
+        <%= link_to "Contact", contact_path, class: "dropdown-item contact"  %>
       </div>
     </li>
-    <% if request.path == "/" %>
-      <%= render "shared/tab_links" %>
-    <% else %>
-      <%= render "shared/external_links" %>
-    <% end %>
+    <li class="nav-item full-screen">
+      <%= link_to "Home", root_path, class: "nav-link home"  %>
+    </li>
+    <li class="nav-item full-screen">
+      <%= link_to "Projects", projects_path, class: "nav-link projects" %>
+    </li>
+    <li class="nav-item full-screen">
+      <%= link_to "About", about_path, class: "nav-link about"  %>
+    </li>
+    <li class="nav-item full-screen">
+      <%= link_to "Contact", contact_path, class: "nav-link contact"  %>
+    </li>
   </ul>
 </div>
