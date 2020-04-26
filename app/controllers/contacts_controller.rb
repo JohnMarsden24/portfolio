@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  skip_before_action :authenticate_user!, only: :create
+  skip_before_action :authenticate_user!, only: [ :index, :create ]
 
   def index
     @contact = Contact.new
