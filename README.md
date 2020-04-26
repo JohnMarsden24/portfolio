@@ -1,1 +1,1 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+Portfolio rails app which allows the user to uploaded photos and descriptions of their projects. Pages include; home, projects, about and a contact form
