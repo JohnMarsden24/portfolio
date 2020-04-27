@@ -2,6 +2,10 @@ body {
   background: white;
 }
 
+ul {
+  padding-inline-start: 24px;
+}
+
 .bottom-border-dark-blue {
   padding-bottom: 8px;
   border-bottom: 2px solid $dark-blue;
