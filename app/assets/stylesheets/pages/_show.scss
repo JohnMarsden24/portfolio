@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.project-list {
+  padding-inline-start: 24px;
+}
+
 @media(max-width: 768px){
   .project-title {
     display: block;
@@ -22,7 +26,6 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 18px;
     margin: 0;
-    padding-inline-start: 24px;
   }
 
   .project-list-item {
