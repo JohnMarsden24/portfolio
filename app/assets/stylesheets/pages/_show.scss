@@ -20,8 +20,9 @@
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0 24px;
+    grid-gap: 0 18px;
     margin: 0;
+    padding-inline-start: 16px;
   }
 
   .project-list-item {
