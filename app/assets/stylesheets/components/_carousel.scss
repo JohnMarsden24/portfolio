@@ -11,11 +11,14 @@
 }
 
 .carousel-indicators {
-  bottom: -24px;
+  bottom: -32px;
 
   li {
     background-color: $black;
     margin: 0 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
   }
 }
 
