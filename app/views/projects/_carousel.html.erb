@@ -8,10 +8,12 @@
   </ol>
   <div class="carousel-inner pb2" data-touch="true">
     <% @project.photos.each_with_index do |photo, index| %>
-      <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" data-touch="true">
-        <div class="carousel-slide-photo" style="background-image: url('<%= cl_image_path photo.key %>')" data-touch="true">
+    <% unless index == 0 %>
+      <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>">
+        <div class="carousel-slide-photo" style="background-image: url('<%= cl_image_path photo.key %>')">
         </div>
       </div>
+      <% end %>
     <% end %>
   </div>
 </div>
