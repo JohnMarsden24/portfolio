@@ -1,7 +1,9 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel" data-touch="true">
   <ol class="carousel-indicators">
     <% @project.photos.each_with_index do |photo, index| %>
+    <% unless index == 0 %>
       <li data-target="#carouselExampleFade" data-slide-to="<%= index %>" class="<%= @project.get_first_item(index) %>"></li>
+      <% end %>
     <% end %>
   </ol>
   <div class="carousel-inner pb2" data-touch="true">
