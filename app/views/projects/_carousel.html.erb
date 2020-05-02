@@ -1,13 +1,13 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel" data-touch="true">
   <ol class="carousel-indicators">
     <% @project.photos.each_with_index do |photo, index| %>
-      <li data-target="#carouselExampleFade" data-slide-to="<%= index %>" class="<%= @project.get_first_item(index) %>">HEY</li>
+      <li data-target="#carouselExampleFade" data-slide-to="<%= index %>" class="<%= @project.get_first_item(index) %>"></li>
     <% end %>
   </ol>
-  <div class="carousel-inner pb2">
+  <div class="carousel-inner pb2" data-touch="true">
     <% @project.photos.each_with_index do |photo, index| %>
-      <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" >
-        <div class="carousel-slide-photo" style="background-image: url('<%= cl_image_path photo.key %>')">
+      <div class="carousel-item d-flex justify-content-center <%= @project.get_first_item(index) %>" data-touch="true">
+        <div class="carousel-slide-photo" style="background-image: url('<%= cl_image_path photo.key %>')" data-touch="true">
         </div>
       </div>
     <% end %>
