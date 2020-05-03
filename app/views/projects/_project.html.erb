@@ -1,3 +1,3 @@
 <%= link_to project_path(project.slug), :action => 'go' do %>
-  <%= cl_image_tag project.photos.first&.key, class: "project-card-image hover-medium", alt: "Project image on screen and mobile" %>
+  <%= cl_image_tag project.photos.first&.key, class: "project-card-image hover-medium my-shadow", alt: "Project image on screen and mobile" %>
 <% end %>

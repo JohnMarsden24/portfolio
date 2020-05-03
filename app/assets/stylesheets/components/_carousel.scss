@@ -1,9 +1,9 @@
 #carouselExampleFade {
-  width: 60%;
+  width: 75%;
 }
 
 .carousel-slide-photo  {
-  padding-top: 53.4%;
+  padding-top: 48.7%;
   width: 100%;
   background-size: 100% auto;
   background-position: center;
@@ -25,5 +25,9 @@
 @media(max-width: 992px) {
   #carouselExampleFade {
     width: 100%;
+  }
+
+  .carousel-indicators {
+
   }
 }
