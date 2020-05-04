@@ -1,4 +1,4 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel" data-touch="true">
+<div id="carouselExampleFade" class="carousel slide carousel-fade center" data-ride="carousel" data-slide="true">
   <ol class="carousel-indicators">
     <% @project.photos[1..-1].each_with_index do |photo, index| %>
       <li data-target="#carouselExampleFade" data-slide-to="<%= index %>" class="<%= @project.get_first_item(index) %>"></li>
