@@ -1,7 +1,36 @@
 .project-listing {
   display: flex;
+  margin-bottom: 64px;
 
   img {
-    width: 200px;
+    width: 400px;
+  }
+}
+
+.project-description {
+  padding-left: 32px;
+}
+
+.project-index-title {
+  display: inline-block;
+}
+
+@media(max-width: 992px) {
+
+  .project-listing {
+    display: block;
+    margin-bottom: 32px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .project-description {
+    padding-left: 0;
+  }
+
+  .project-index-title {
+    margin-top: 16px;
   }
 }
