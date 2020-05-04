@@ -17,6 +17,10 @@
     display: block;
   }
 
+  .title {
+    margin-bottom: 16px;
+  }
+
   .project-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
