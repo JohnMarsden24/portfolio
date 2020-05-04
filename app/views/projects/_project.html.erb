@@ -1,20 +1,13 @@
-<div class="project-listing">
-  <%= link_to project_path(project.slug), :action => 'go' do %>
-    <%= cl_image_tag project.photos.first&.key, class: "my-shadow hover-medium", alt: "Project image on screen and mobile" %>
-  <% end %>
-  <div class="project-description">
-  <%= link_to project_path(project.slug), :action => 'go' do %>
-    <h2 class="bold text-dark-blue pr1 project-index-title" style="border-bottom: 6px solid <%= project.color %>"><%= project.name %></h2>
-  <% end %>
-  <div class="mb2">
-        <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe, project.url, class: "mr1 no-d", target: "_blank" %>
-        <%= link_to "<i class='fab fa-github'></i> View source".html_safe, project.github, class: "no-d", target: "_blank" %>
-      </div>
-  <% if project.description.length < 250 %>
-      <p><%= project.description %></p>
-    <% else %>
-      <p><%= project.description[0..250] %>. . . <%= link_to "see more", project_path(project.slug), class: "no-d" %></p>
-    <% end %>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
 </div>
-
