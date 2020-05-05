@@ -1,7 +1,8 @@
 .my-nav {
-  height: 10vh;
+  padding-top: 16px;
+  padding-bottom: 40px;
   width: 75%;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 }
 
 .short-name, .dropdown {
@@ -57,11 +58,19 @@
     width: 100%;
   }
 
-  .full-name {
+  .full-name, .nav-item {
     display: none;
   }
-  .short-name {
+
+  .short-name, .dropdown {
     display: block;
+  }
+   .nav-link {
+    padding: 0;
+  }
+
+  .fa-bars {
+    font-size: 1.5rem;
   }
 }
 
@@ -73,19 +82,5 @@
     margin-bottom: 8px;
   }
 
-  .nav-item {
-    display: none;
-  }
 
-  .dropdown {
-    display: block;
-  }
-
-  .nav-link {
-    padding: 0;
-  }
-
-  .fa-bars {
-    font-size: 1.5rem;
-  }
 }
