@@ -2,26 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  h1 {
-    font-size: 6rem;
-    font-weight: 900;
-    line-height: 5rem;
-  }
-
-  h3 {
-    color: $dark-blue;
-    font-size: 2rem;
-    line-height: 2.4rem;
-  }
-  img {
-    max-height: 80vh;
-    max-width: 100%;
-  }
+  width: 75%;
+  padding-top: 32px;
 }
 
 .hero-name {
-  min-width: 30vw;
+  width: 45%;
+}
+
+.hero-drawing {
+  width: 50%;
 }
 
 .links {
@@ -37,6 +27,7 @@
   .hero-logo {
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 
     h1 {
       font-size: 4rem;
@@ -47,8 +38,8 @@
     }
   }
 
-  .hero-name {
-    min-width: 90vw;
+  .hero-drawing, .hero-name {
+    width: 100%;
   }
 
   .links {

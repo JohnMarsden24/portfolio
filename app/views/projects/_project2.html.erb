@@ -1,0 +1,23 @@
+<div class="project-container">
+  <div class="project-listing">
+    <%= cl_image_tag project.photos.first&.key, id: "img_#{dom_id(project)}", class: "project-image",  alt: "Project image on screen and mobile" %>
+    <div class="project-text" id="text_<%= dom_id(project) %>">
+      <h2 class="bold text-dark-blue pr1 project-index-title" style="border-bottom: 6px solid <%= project.color %>"><%= project.name %></h2>
+      <div class="mb2">
+        <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe, project.url, class: "mr1 no-d", target: "_blank" %>
+        <%= link_to "<i class='fab fa-github'></i> View source".html_safe, project.github, class: "no-d", target: "_blank" %>
+      </div>
+      <div class="project-description">
+      <p><%= project.description[0..150] %> <span class="text-shadow"></span> </p>
+      <!-- <div class="text-shadow"></div> -->
+
+      </div>
+      <button class="toggle-button" data-id="<%= dom_id(project) %>">See more</button>
+    </div>
+  </div>
+  <div class="project-details" data-id="details_<%= dom_id(project) %>">
+    <%= render 'show', project: project %>
+  </div>
+</div>
+
+
