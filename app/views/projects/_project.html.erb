@@ -3,9 +3,7 @@
     <%= cl_image_tag project.photos.first&.key, class: "my-shadow hover-medium", alt: "Project image on screen and mobile" %>
   <% end %>
   <div class="project-description">
-  <%= link_to project_path(project.slug), :action => 'go' do %>
-    <h2 class="bold text-dark-blue pr1 project-index-title" style="border-bottom: 6px solid <%= project.color %>"><%= project.name %></h2>
-  <% end %>
+  <h2 class="bold pr1 text-black project-index-title" style="border-bottom: 6px solid <%= project.color %>"><%= project.name %></h2>
   <div class="mb2">
         <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe, project.url, class: "mr1 no-d", target: "_blank" %>
         <%= link_to "<i class='fab fa-github'></i> View source".html_safe, project.github, class: "no-d", target: "_blank" %>

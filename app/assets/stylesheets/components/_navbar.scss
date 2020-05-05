@@ -1,6 +1,7 @@
 .my-nav {
   height: 10vh;
-  width: 80%;
+  width: 75%;
+  margin-bottom: 16px;
 }
 
 .short-name, .dropdown {
@@ -9,30 +10,30 @@
 
 .nav-item {
   a {
-    color: $dark-blue;
+    color: $black;
     transition: .3s;
     opacity: .5;
     font-family: $headers-font;
 
     &:hover {
-        box-shadow: 0px -1px 0px $dark-blue inset;
+        box-shadow: 0px -1px 0px $black inset;
     }
   }
 
   .active {
     opacity: 1;
-    box-shadow: 0px -2px 0px $dark-blue inset;
+    box-shadow: 0px -2px 0px $black inset;
 
     &:hover {
       opacity: 1;
-      box-shadow: 0px -2px 0px $dark-blue inset;
+      box-shadow: 0px -2px 0px $black inset;
     }
   }
 }
 
 .nav-item-burger {
   a {
-    color: $dark-blue;
+    color: $black;
   }
 }
 
@@ -45,7 +46,7 @@
 
   .active {
     font-weight: 700;
-    color: $dark-blue !important;
+    color: $black !important;
     background: none !important;
   }
 }
@@ -53,7 +54,7 @@
 @media(max-width: 992px) {
 
   .my-nav {
-    width: 90%;
+    width: 100%;
   }
 
   .full-name {
@@ -65,6 +66,12 @@
 }
 
 @media(max-width: 576px) {
+
+  .my-nav {
+    height: 100%;
+    padding: 8px 0;
+    margin-bottom: 8px;
+  }
 
   .nav-item {
     display: none;
