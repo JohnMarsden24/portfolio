@@ -1,39 +1,15 @@
-.text-dark-blue {
-  color: $dark-blue;
-}
-
 .text-purple {
-  color: $purple !important;
+  color: $purple;
+
+  &:hover {
+    color: $purple;
+  }
 }
 
 .text-dark-purple {
   color: $dark-purple;
-}
 
-.text-black {
-  color: $black;
-}
-
-.text-grey {
-  color: $grey;
-}
-
-.text-white {
-  color: white;
-}
-
-.bg-dark-blue {
-  background-color: $dark-blue;
-}
-
-.bg-off-black {
-  background-color: $black;
-}
-
-.bg-grey {
-  background-color: $grey;
-}
-
-.bg-white {
-  background-color: white;
+  &:hover {
+    color: $dark-purple;
+  }
 }

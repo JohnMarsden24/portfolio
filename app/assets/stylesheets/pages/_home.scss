@@ -8,11 +8,7 @@
 
 .intro-text {
   width: 85%;
-}
-
-.hero-right {
-  display: flex;
-  justify-content: flex-end;
+  margin-bottom: 60px;
 }
 
 .hero-img {
@@ -29,9 +25,6 @@
 }
 
 @media(max-width: 992px) {
-  .hero {
-    flex-direction: column;
-  }
 
   .hero-right {
     display: none;
@@ -43,5 +36,6 @@
 
   .intro-text {
     width: 100%;
+    margin-bottom: 45px;
   }
 }
