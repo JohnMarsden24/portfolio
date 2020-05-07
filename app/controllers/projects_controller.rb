@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   before_action :find_project, only: [ :show, :edit, :destroy]
 
   def index
-    @projects = Project.all.reorder(created_at: :desc)
+    @projects = Project.all.reorder(id: :desc)
   end
 
   def new
@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
   end
 
   def show
+    @next = Project.all.reorder(id: :desc).find_by "id < ?", @project.id
   end
 
   def create

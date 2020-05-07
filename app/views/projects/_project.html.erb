@@ -1,17 +1,37 @@
-<div class="project-listing">
-  <%= link_to project_path(project.slug), :action => 'go' do %>
-    <%= cl_image_tag project.photos.first&.key, class: "my-shadow hover-medium", alt: "Project image on screen and mobile" %>
-  <% end %>
-  <div class="project-description">
-  <h2 class="bold pr1 text-black project-index-title" style="border-bottom: 6px solid <%= project.color %>"><%= project.name %></h2>
-  <div class="mb2">
-        <%= link_to "<i class='fas fa-desktop'></i> Visit site".html_safe, project.url, class: "mr1 no-d", target: "_blank" %>
-        <%= link_to "<i class='fab fa-github'></i> View source".html_safe, project.github, class: "no-d", target: "_blank" %>
+<% @projects.each_with_index do |project, index| %>
+
+      <div class="project-card <%= project.flex_direction(index) %>">
+        <div class="project-img-container <%= project.right_or_left(index) %>">
+          <%= cl_image_tag project.photos.first&.key, class: "project-image", alt: "Project image" %>
+        </div>
+        <div class="project-text-container">
+          <div class="project-description">
+            <h2 class="mb15"><%= project.name %></h2>
+              <% if project.description.length < 200 %>
+                <p class="intro mb15"><%= project.description %></p>
+              <% else %>
+                <div class="text-fade-container mb15">
+                  <p class="intro"><%= project.description %></p>
+                  <div class="text-fade">
+                  </div>
+                </div>
+              <% end %>
+            <div class="mb30">
+              <%= link_to "Read case study", project_path(project), class: "bold" %>
+            </div>
+            <div class="project-links">
+              <div class="project-link mr30">
+                <%= image_tag "github.svg", class: "link-image", alt: "Github logo" %>
+                <%= link_to "View source", project.github, target: "_blank"  %>
+              </div>
+              <div class="project-link mr30">
+                <%= image_tag "screen.svg", class: "link-image", alt: "Computer screen logo" %>
+                <%= link_to "View site", project.url, target: "_blank"  %>
+              </div>
+            </div>
+          </div>
+        </div >
       </div>
-  <% if project.description.length < 250 %>
-      <p><%= project.description %></p>
-    <% else %>
-      <p><%= project.description[0..250] %>. . . <%= link_to "see more", project_path(project.slug), class: "no-d" %></p>
-    <% end %>
-  </div>
-</div>
+
+<% end %>
+

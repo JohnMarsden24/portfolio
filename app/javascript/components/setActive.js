@@ -5,6 +5,10 @@ const addActiveClass = (elems) => {
 };
 
 const findElements = (page) => {
+  const regex = /projects\//;
+  if (regex.test(page)) {
+    page = "projects"
+  }
   if (page != "") {
     return document.querySelectorAll(`.${page}`);
   } else {
@@ -22,7 +26,9 @@ const setActive = () => {
   const page = findPage()
 
   const elems = findElements(page)
-  addActiveClass(elems)
+  if (elems) {
+    addActiveClass(elems)
+  }
 };
 
 export { setActive }

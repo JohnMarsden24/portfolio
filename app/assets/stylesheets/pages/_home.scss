@@ -1,0 +1,47 @@
+.hero {
+  display: flex;
+}
+
+.hero-left {
+  margin-top: 70px;
+}
+
+.intro-text {
+  width: 85%;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-img {
+  width: 600px;
+  height: 600px;
+}
+
+.links {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-left {
+    margin-top: 0;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+}
