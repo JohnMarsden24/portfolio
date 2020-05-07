@@ -2,11 +2,15 @@
 
       <div class="project-card <%= project.flex_direction(index) %>">
         <div class="project-img-container <%= project.right_or_left(index) %>">
-          <%= cl_image_tag project.photos.first&.key, class: "project-image", alt: "Project image" %>
+          <%= link_to project_path(project.slug), :action => 'go' do %>
+            <%= cl_image_tag project.photos.first&.key, class: "project-image hover-medium", alt: "Project image" %>
+          <% end %>
         </div>
         <div class="project-text-container">
           <div class="project-description">
+            <%= link_to project_path(project.slug), :action => 'go' do %>
             <h2 class="mb15"><%= project.name %></h2>
+            <% end %>
               <% if project.description.length < 200 %>
                 <p class="intro mb15"><%= project.description %></p>
               <% else %>
@@ -17,7 +21,7 @@
                 </div>
               <% end %>
             <div class="mb30">
-              <%= link_to "Read case study", project_path(project), class: "bold" %>
+              <%= link_to "Read case study", project_path(project), class: "bold text-purple" %>
             </div>
             <div class="project-links">
               <div class="project-link mr30">

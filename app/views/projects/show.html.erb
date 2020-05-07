@@ -1,4 +1,4 @@
-<div class="text-container">
+<div class="show-container">
   <%= render "projects/carousel" %>
   <div class="grid-container-text">
     <div class="project-text-left">
@@ -51,9 +51,9 @@
         <%= image_tag "next-arrow.svg", class: "next-arrow", alt: "Arrow logo" %>
       </div>
     <% else %>
-      <div class="project-link next-link">
+      <div class="project-link back-link">
+        <%= image_tag "back-arrow.svg", class: "back-arrow", alt: "Back logo" %>
         <%= link_to "Back to projects", projects_path %>
-        <%= image_tag "next-arrow.svg", class: "next-arrow", alt: "Arrow logo" %>
       </div>
     <% end %>
   </div>
