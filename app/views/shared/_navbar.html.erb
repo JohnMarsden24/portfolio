@@ -1,35 +1,28 @@
-<div class="my-nav">
-  <div class="d-flex bigger lato">
-      <a href="/" class="no-d full-name text-black">
-          <span class="bolder">John Marsden</span>
-          <span class="text-dark-blue"> Full Stack Developer</span>
+<div class="my-nav intro">
+      <a href="/" class="full-name">
+        <strong>John Marsden</strong>
+        Full Stack Developer
       </a>
-    <a href="/" class="no-d d-flex">
-      <span class="bolder short-name text-black">JM</span>
-      <span class="text-dark-blue short-name">FSD</span>
+    <a href="/" class="short-name">
+      <strong>JM</strong>FSD
     </a>
-  </div>
   <ul class="nav" id="myTab" role="tablist">
      <li class="nav-item-burger dropdown">
       <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
       <div class="dropdown-menu dropdown-menu-right">
-        <%= link_to "Home", root_path, class: "dropdown-item home"  %>
         <%= link_to "Projects", projects_path, class: "dropdown-item projects" %>
-        <%= link_to "About", about_path, class: "dropdown-item about"  %>
-        <%= link_to "Contact", contact_path, class: "dropdown-item contact"  %>
+        <%= link_to "About me", about_path, class: "dropdown-item about"  %>
+        <%= link_to "Get in touch", contact_path, class: "dropdown-item contact"  %>
       </div>
-    </li>
-    <li class="nav-item">
-      <%= link_to "Home", root_path, class: "nav-link home"  %>
     </li>
     <li class="nav-item">
       <%= link_to "Projects", projects_path, class: "nav-link projects" %>
     </li>
     <li class="nav-item">
-      <%= link_to "About", about_path, class: "nav-link about"  %>
+      <%= link_to "About me", about_path, class: "nav-link about"  %>
     </li>
     <li class="nav-item">
-      <%= link_to "Contact", contact_path, class: "nav-link contact"  %>
+      <%= link_to "Get in touch", contact_path, class: "nav-link contact"  %>
     </li>
   </ul>
 </div>

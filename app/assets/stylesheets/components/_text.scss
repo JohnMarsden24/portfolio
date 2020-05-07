@@ -6,27 +6,10 @@
   text-align: justify;
 }
 
-.bolder {
+.bold {
   font-weight: 700;
 }
 
-.bold {
-  font-weight: 900;
-}
-
-.bigger {
-  font-size: 1.2rem;
-}
-
-.lato {
-  font-family: $headers-font
-}
-
-.no-d {
-  &:hover {
-    text-decoration: none;
-  }
-}
 
 @media(max-width: 576px) {
   .taj {

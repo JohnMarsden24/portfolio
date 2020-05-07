@@ -1,9 +1,9 @@
-#carouselExampleFade {
-  width: 75%;
+#project-carousel {
+  margin-bottom: 60px;
 }
 
 .carousel-slide-photo  {
-  padding-top: 48.7%;
+  padding-top: 53.2%;
   width: 100%;
   background-size: 100% auto;
   background-position: center;
@@ -11,23 +11,26 @@
 }
 
 .carousel-indicators {
-  bottom: -32px;
+  position: static;
+  margin: 0 auto;
 
   li {
-    background-color: $black;
-    margin: 0 8px;
+    background-color: #999B9C;
+    border-radius: 50%;
     width: 10px;
     height: 10px;
-    border-radius: 100%;
+    border: none;
+    margin: 0 8px;
+
+  }
+
+  .active {
+    background-color: $purple;
   }
 }
 
 @media(max-width: 992px) {
-  #carouselExampleFade {
-    width: 100%;
-  }
-
-  .carousel-indicators {
-
+  #project-carousel {
+    margin-bottom: 30px;
   }
 }
