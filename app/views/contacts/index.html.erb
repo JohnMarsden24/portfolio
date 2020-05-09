@@ -1,6 +1,25 @@
-<div class="text-container">
-  <div class="contact-form">
+<div class="contact-form-container">
+  <div class="mb60">
     <h2 class="mb30">Let's stay in touch</h2>
+    <div class="intro-text">
+      <p class="intro">Connect via my socials or send me a message using the form</p>
+    </div>
+        <div class="links">
+        <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
+        <% end %>
+        <%= link_to 'https://github.com/JohnMarsden24', class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
+        <% end %>
+        <%= mail_to 'john.marsden24@gmail.com', class: "mr30", target: "_blank", :action => 'go' do %>
+          <%= image_tag "email.svg", class: "hover-big", alt: "email logo" %>
+        <% end %>
+        <%= link_to download_pdf_path, target: "_blank", :action => 'go' do %>
+          <%= image_tag "cv.svg", class: "hover-big", alt: "contact card logo" %>
+        <% end %>
+      </div>
+  </div>
+  <div class="contact-form">
     <%= simple_form_for @contact, remote: true do |f| %>
       <%= f.input  :name, required: true %>
       <%= f.input :email, required: true %>

@@ -1,6 +1,6 @@
 const addActiveClass = (elems) => {
   elems.forEach(elem => {
-    elem.classList.add("active");
+    elem.classList.add("link-active");
   })
 };
 

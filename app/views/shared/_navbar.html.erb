@@ -1,28 +1,24 @@
 <div class="my-nav intro">
-      <a href="/" class="full-name">
-        <strong>John Marsden</strong>
-        Full Stack Developer
-      </a>
+  <div class="navbar-left">
+    <a href="/" class="full-name">
+      <strong>John Marsden</strong>
+      Full Stack Developer
+    </a>
     <a href="/" class="short-name">
       <strong>JM</strong>FSD
     </a>
-  <ul class="nav" id="myTab" role="tablist">
-     <li class="nav-item-burger dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></a>
-      <div class="dropdown-menu dropdown-menu-right">
-        <%= link_to "Projects", projects_path, class: "dropdown-item projects" %>
-        <%= link_to "About me", about_path, class: "dropdown-item about"  %>
-        <%= link_to "Get in touch", contact_path, class: "dropdown-item contact"  %>
-      </div>
-    </li>
-    <li class="nav-item">
-      <%= link_to "Projects", projects_path, class: "nav-link projects" %>
-    </li>
-    <li class="nav-item">
-      <%= link_to "About me", about_path, class: "nav-link about"  %>
-    </li>
-    <li class="nav-item">
-      <%= link_to "Get in touch", contact_path, class: "nav-link contact"  %>
-    </li>
-  </ul>
+  </div>
+  <div class="navbar-right">
+    <%= link_to "Projects", projects_path, class: "navbar-link projects" %>
+    <%= link_to "About me", about_path, class: "navbar-link about" %>
+    <%= link_to "Get in touch", contact_path, class: "navbar-link contact" %>
+    <div class="burger-menu">
+      <div class="burger-menu-inner"></div>
+    </div>
+  </div>
+</div>
+<div class="burger-dropdown">
+  <%= link_to "Projects", projects_path, class: "dropdown-link projects" %>
+  <%= link_to "About me", about_path, class: "dropdown-link about" %>
+  <%= link_to "Get in touch", contact_path, class: "dropdown-link contact" %>
 </div>
