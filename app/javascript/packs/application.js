@@ -5,9 +5,9 @@ require("channels")
 
 import "bootstrap";
 import { setActive } from '../components/setActive';
-import { ExpandDetails } from '../components/expandDetails';
+import { DropdownMenu } from '../components/dropdownMenu';
 
 document.addEventListener('turbolinks:load', () => {
   setActive();
-  // ExpandDetails.expandButtons();
+  DropdownMenu.burgerLink();
 });

@@ -6,8 +6,8 @@
 }
 
 .page-container {
-  width: 1140px;
-  margin: 40px auto 80px;
+  width: 80%;
+  margin: 40px auto;
 }
 
 .show-container {
@@ -20,9 +20,15 @@
   margin-top: 80px;
 }
 
-
 .projects-container {
   margin-top: 80px;
+}
+
+.contact-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  justify-content: space-between;
 }
 
 @media(max-width: 992px) {
@@ -38,14 +44,13 @@
     margin-top: 45px;
   }
 
-  .projects-container {
+  .projects-container, .contact-form-container {
     margin-top: 45px;
   }
 
   .page-container {
-    width: 80%;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
