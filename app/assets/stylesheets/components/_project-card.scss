@@ -7,11 +7,11 @@
   flex-direction: row-reverse;
 }
 
-.left {
+.right {
   margin-right: 30px;
 }
 
-.right {
+.left {
   margin-left: 30px;
 }
 
@@ -24,7 +24,13 @@
 }
 
 .project-image {
-  max-width: 100%;
+  width: 100%;
+}
+
+.text-fade-container {
+  position: relative;
+  height: 84px;
+  overflow: hidden;
 }
 
 .text-fade {
@@ -34,12 +40,6 @@
   background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,1));
   width: 45%;
   height: 20px;
-}
-
-.text-fade-container {
-  position: relative;
-  height: 84px;
-  overflow: hidden;
 }
 
 .project-description {
@@ -70,10 +70,6 @@
   .project-card{
     display: block;
     margin-bottom: 60px;
-
-    img {
-      width: 100%;
-    }
   }
 
   .text-fade-container {

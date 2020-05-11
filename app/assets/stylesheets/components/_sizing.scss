@@ -1,3 +1,37 @@
+.height100 {
+  height: 100%;
+}
+
 .max-width-90 {
   max-width: 90%;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width45 {
+  width: 45%;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width55 {
+  width: 55%;
+}
+
+.width85 {
+  width: 85%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+@media(max-width: 992px) {
+  .width30, .width45, .width50, .width55, .width85 {
+    width: 100%;
+  }
 }

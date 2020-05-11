@@ -9,7 +9,7 @@ class Project < ApplicationRecord
   end
 
   def right_or_left(index)
-    index.odd? ? "right" : "left"
+    index.odd? ? "left" : "right"
   end
 
   def get_first_item(index)

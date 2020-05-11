@@ -1,65 +1,18 @@
-.project-list-item {
-  margin: 8px 0;
-  color: $dark-purple;
+.link-more {
+  padding: 0 6px;
 }
 
-.project-text-right {
-  margin-top: 15px;
-
-  ul {
-    margin: 0;
-  }
-}
-
-.next-arrow {
-  padding: 2px 0 0 6px;
-}
-
-.next-link {
+.link-more-container {
   margin-left: auto;
-}
-
-.back-arrow {
-  padding: 2px 6px 0 0;
-}
-
-.back-link {
-  margin-left: auto;
-}
-
-.project-show-links {
-  width: 555px;
-  flex-wrap: wrap;
 }
 
 @media(max-width: 992px){
 
-  .project-text-right {
-    margin-top: 0;
-  }
-
-  .project-show-links {
-    width: 100%;
-  }
-
-  .project-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 18px;
-  }
-
-  .project-list-item {
-    margin: 0;
-  }
-}
-
-@media(max-width: 576px) {
-  .next-link, .back-link {
-    margin-top: 30px;
+  .link-more-container {
+    grid-column: 1 / span 2;
   }
 
   .back-link {
     margin-left: 0;
   }
 }
-

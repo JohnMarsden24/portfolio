@@ -16,9 +16,9 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    project = Project.new(strong_params)
-    if project.save
-      redirect_to project_path(project)
+    @project = Project.new(strong_params)
+    if @project.save
+      redirect_to project_path(@project)
     else
       render :new
     end
