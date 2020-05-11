@@ -1,14 +1,19 @@
-<div class="text-container">
-  <div class="grid-container-text">
-    <div class="about-text-left">
+<div class="about-page-grid-container navbar-spacing-large mb120">
+    <div class="about-left-top">
       <h2 class="mb15">About me</h2>
-      <p class="mb60 intro">
+      <p class="mb30 intro">
         After a decade of programming machines and robots for the architectural and engineering manufacturing sectors, I grew curious as to other forms of coding. So at the start of this year I attended a full stack web
         development bootcamp at Le Wagon London to learn how to code.
         <br>
         <br>
         Now armed with an extensive understanding of web development using frameworks and having a problem solving yet creative and innovative mindset, I am able to deliver elegant and user-centric solutions effectively and efficiently.
       </p>
+      <div class="project-link mb45">
+        <%= image_tag "cv.svg", class: "link-image", alt: "contact card logo" %>
+        <%= link_to "Download my CV", download_pdf_path, class: "mr30", target: "_blank" %>
+      </div>
+    </div>
+    <div class="about-left-bottom">
       <h3 class="mb15">Education</h3>
       <p class="mb45">
         <strong>Le Wagon - Full Stack Web Development Bootcamp</strong>
@@ -33,7 +38,7 @@
         Chanel | Oct ‘19 - Dec ‘19
         <br>
         <br>
-        Working within the manufacturing team to programme and operate the in-house CNCs
+        Working within the manufacturing team to programme and operate the in-house CNCs.
         <br>
         <br>
         <strong>5 Axis CNC Programmer and Application Engineer</strong>
@@ -41,11 +46,11 @@
         Attewell | Aug ‘18 - Sept ‘19
         <br>
         <br>
-        Worked with high profile clients such as Airbus and Boeing
+        Worked with high profile clients such as Airbus and Boeing.
         <br>
-        Responsible for programming the four in-house 5 axis CNCs and managing the workflow and trailing of new jobs
+        Responsible for programming the four in-house 5 axis CNCs and managing the workflow and trailing of new jobs.
         <br>
-        Adhering to 5S lean manufacturing
+        Adhering to 5S lean manufacturing.
         <br>
         <br>
         <strong>CNC Programmer and CAD Engineer</strong>
@@ -53,65 +58,64 @@
         Foster + Partners | Nov ‘13 - Jul ‘18
         <br>
         <br>
-        Helped grow the workshops CNC capacity and brought over 90% of jobs in-house
+        Helped grow the workshops CNC capacity and brought over 90% of jobs in-house.
         <br>
-        Worked alongside the workshop assisting in CAD/CAM/3D printing
+        Worked alongside the workshop assisting in CAD/CAM/3D printing.
         <br>
-        Responsible for overseeing the entire production line and the three in-house CNCs and Kuka robot
+        Responsible for overseeing the entire production line and the three in-house CNCs and Kuka robot.
       </p>
     </div>
-    <div class="about-text-right">
-      <%= image_tag "hero-logo.png", class: "about-logo", alt: "Full stack illustration" %>
-      <div class="mb30 about-list">
+    <div class="about-right">
+      <%= image_tag "hero-logo.png", class: "about-logo hide", alt: "Full stack illustration" %>
+      <div class="about-right-top">
         <h4 class="mb15">Languages</h4>
-        <ul class="project-list">
-          <li class="project-list-item">
+        <ul class="grid-container-list mb45">
+          <li>
             Ruby
           </li>
-          <li class="project-list-item">
+          <li>
             Rails
           </li>
-          <li class="project-list-item">
+          <li>
             JavaScript ES6
           </li>
-          <li class="project-list-item">
+          <li>
             React
           </li>
-          <li class="project-list-item">
+          <li>
             HTML5
           </li>
-          <li class="project-list-item">
+          <li>
             CSS/SCSS
           </li>
-          <li class="project-list-item">
+          <li>
             SQL/PostgreSQL
           </li>
         </ul>
       </div>
       <h4 class="mb15">Technical Skills</h4>
-      <ul class="project-list no-m">
-        <li class="project-list-item">
+      <ul class="grid-container-list mb45">
+        <li>
           OOP concepts
         </li>
-        <li class="project-list-item">
+        <li>
           TDD workflow
         </li>
-        <li class="project-list-item">
+        <li>
           RESTful APIs
         </li>
-        <li class="project-list-item">
+        <li>
           MVC structures
         </li>
-        <li class="project-list-item">
-          GitHub collaboration
-        </li>
-        <li class="project-list-item">
-          UI/UX
-        </li>
-        <li class="project-list-item">
+        <li>
           Heroku
+        </li>
+        <li>
+          GitHub
+        </li>
+        <li>
+          UI/UX
         </li>
       </ul>
     </div>
-  </div>
 </div>

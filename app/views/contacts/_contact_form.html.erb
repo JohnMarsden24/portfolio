@@ -1,0 +1,16 @@
+   <%= form_for @contact, remote: true do |f| %>
+        <%= f.label :name %></br>
+        <%= f.text_field  :name, class: "width50 mb30" %><br>
+
+        <%= f.label :email, class: 'required' %></br>
+        <%= f.text_field :email, required: true, class: "width100 mb30" %>
+
+        <%= f.label :message, class: 'required' %></br>
+        <%= f.text_area :message, rows: 6, required: true, class: "width100 mb30",
+                          placeholder: "Send me a message"%>
+        <div class="flex-container align-center space-between">
+        <%= f.submit 'Get in touch', class: 'my-button hover-big animate-button', id: "submit", data: { disable_with: false } %>
+        <div id="flash-message">
+        </div>
+        </div>
+      <% end %>

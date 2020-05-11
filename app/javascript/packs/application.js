@@ -6,8 +6,10 @@ require("channels")
 import "bootstrap";
 import { setActive } from '../components/setActive';
 import { DropdownMenu } from '../components/dropdownMenu';
+import { SendMessage } from '../components/sendMessage'
 
 document.addEventListener('turbolinks:load', () => {
   setActive();
   DropdownMenu.burgerLink();
+  SendMessage.ajaxListen();
 });

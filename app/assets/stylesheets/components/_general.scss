@@ -83,6 +83,32 @@ p {
   }
 }
 
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width: 992px) {
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+}
 
 @media(max-width: 576px) {
 

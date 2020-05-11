@@ -1,7 +1,20 @@
-.contact-form-text-area {
-  color: black;
+.alert {
+  margin-bottom: 0;
+  animation: fade-out;
+  animation-duration: 2s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
-.hidden { display: none; }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .alert-error {
 background-color: #f2dede;
 border-color: #eed3d7;

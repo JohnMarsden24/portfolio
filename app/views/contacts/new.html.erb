@@ -1,0 +1,24 @@
+<div class="flex-container space-between navbar-spacing-large mb120">
+  <div class="width50">
+    <h2 class="mb15">Get in touch</h2>
+    <p class="intro mb45">If you'd like to send me a message please use the form below.</p>
+    <div class="text-dark-purple mb45 contact-form">
+      <%= render "contact_form" %>
+    </div>
+  </div>
+  <div class="width45">
+    <h3 class="mb30">Find me</h3>
+    <p class="intro mb30">On LinkedIn, Github or drop me an e-mail.</p>
+    <div class="link-container">
+      <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
+        <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
+      <% end %>
+      <%= link_to 'https://github.com/JohnMarsden24', class: "mr30", target: "_blank", :action => 'go' do %>
+        <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
+      <% end %>
+      <%= mail_to 'john.marsden24@gmail.com', class: "mr30", target: "_blank", :action => 'go' do %>
+        <%= image_tag "email.svg", class: "hover-big", alt: "email logo" %>
+      <% end %>
+    </div>
+  </div>
+</div>
