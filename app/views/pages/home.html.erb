@@ -1,26 +1,26 @@
 <div class="flex-container navbar-spacing-small">
     <div class="width50 mt70-0">
-      <h1 class="mb30">John Marsden</h1>
-      <p class="width85 intro mb60">
-        Hi I’m John, a UK based full stack developer living and working in London. Currently looking for a new role.
-        <br>
-        <br>
-        I’m eager to share my skills and passion for building as a full stack web developer having previously worked with CNC and robotic programming.
-      </p>
-      <div class="link-container">
-        <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
-        <% end %>
-        <%= link_to 'https://github.com/JohnMarsden24', class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
-        <% end %>
-        <%= link_to download_pdf_path, class: "mr30", target: "_blank", :action => 'go' do %>
-          <%= image_tag "cv.svg", class: "hover-big", alt: "contact card logo" %>
-        <% end %>
-        <%= mail_to 'john@johnmarsden.dev', target: "_blank", :action => 'go' do %>
-          <%= image_tag "email.svg", class: "hover-big", alt: "email logo" %>
-        <% end %>
-      </div>
+        <h1 class="mb30">John Marsden</h1>
+        <p class="width85 intro mb60">
+            Hi I’m John, a UK based full stack developer living and working in London. Currently looking for a new role.
+            <br>
+            <br>
+            I’m eager to share my skills and passion for building as a full stack developer having previously worked with CNC and robotic programming.
+        </p>
+        <div class="link-container">
+            <%= link_to 'https://www.linkedin.com/in/johnmarsden24/', class: "mr30", target: "_blank", :action => 'go' do %>
+            <%= image_tag "linkedin.svg", class: "hover-big", alt: "LinkedIn logo" %>
+            <% end %>
+            <%= link_to 'https://github.com/JohnMarsden24', class: "mr30", target: "_blank", :action => 'go' do %>
+            <%= image_tag "github.svg", class: "hover-big", alt: "Github logo" %>
+            <% end %>
+            <%= link_to download_pdf_path, class: "mr30", target: "_blank", :action => 'go' do %>
+            <%= image_tag "cv.svg", class: "hover-big", alt: "contact card logo" %>
+            <% end %>
+            <%= mail_to 'john@johnmarsden.dev', target: "_blank", :action => 'go' do %>
+            <%= image_tag "email.svg", class: "hover-big", alt: "email logo" %>
+            <% end %>
+        </div>
     </div>
     <%= image_tag "hero-logo.png", alt: "Full stack illustration", class: "width50 height100 hide" %>
 </div>
