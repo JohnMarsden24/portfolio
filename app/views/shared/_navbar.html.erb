@@ -1,24 +1,32 @@
 <div class="my-nav intro">
-  <div class="navbar-left">
-    <a href="/" class="full-name">
-      <strong>John Marsden</strong>
-      Full Stack Developer
-    </a>
-    <a href="/" class="short-name">
-      <strong>JM</strong>FSD
-    </a>
-  </div>
-  <div class="navbar-right">
-    <%= link_to "Projects", projects_path, class: "navbar-link projects" %>
-    <%= link_to "About me", about_path, class: "navbar-link about" %>
-    <%= link_to "Get in touch", contact_path, class: "navbar-link contact" %>
-    <div class="burger-menu">
-      <div class="burger-menu-inner"></div>
+    <div class="navbar-left">
+        <a href="/" class="full-name">
+            <strong>John Marsden</strong>
+            Full Stack Developer
+        </a>
+        <a href="/" class="short-name">
+            <strong>JM</strong>FSD
+        </a>
     </div>
-  </div>
+    <div class="navbar-right">
+        <%= link_to "Projects", projects_path, class: "navbar-link projects" %>
+        <%= link_to "About me", about_path, class: "navbar-link about" %>
+        <%
+=begin%>
+        <%= link_to "Get in touch", contact_path, class: "navbar-link contact" %>
+        <%
+=end%>
+        <div class="burger-menu">
+            <div class="burger-menu-inner"></div>
+        </div>
+    </div>
 </div>
 <div class="burger-dropdown">
-  <%= link_to "Projects", projects_path, class: "dropdown-link projects" %>
-  <%= link_to "About me", about_path, class: "dropdown-link about" %>
-  <%= link_to "Get in touch", contact_path, class: "dropdown-link contact" %>
+    <%= link_to "Projects", projects_path, class: "dropdown-link projects" %>
+    <%= link_to "About me", about_path, class: "dropdown-link about" %>
+    <%
+=begin%>
+    <%= link_to "Get in touch", contact_path, class: "dropdown-link contact" %>
+    <%
+=end%>
 </div>
