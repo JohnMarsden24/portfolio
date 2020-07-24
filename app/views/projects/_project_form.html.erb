@@ -3,19 +3,11 @@
 <%= f.input :name %>
 <%= f.input :url %>
 <%= f.input :github %>
-<%
-=begin%>
 <%= f.input :technologies %>
-<%
-=end%>
 <%= f.input :description %>
 <%= f.input :difficulties %>
 <%= f.input :solution %>
-<%
-=begin%>
 <%= f.input :features %>
-<%
-=end%>
 <%= f.input :photos, as: :file, input_html: { multiple: true } %>
 <%= f.button :submit, class: "btn-light" %>
 <% end %>

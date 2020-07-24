@@ -7,6 +7,8 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.text :description
       t.text :difficulties
       t.text :solution
+      t.text :technologies
+      t.text :features
 
       t.timestamps
     end
