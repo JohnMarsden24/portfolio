@@ -55,6 +55,8 @@ ActiveRecord::Schema.define(version: 2020_04_25_143206) do
     t.text "description"
     t.text "difficulties"
     t.text "solution"
+    t.text "technologies"
+    t.text "features"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
