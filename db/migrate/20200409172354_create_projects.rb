@@ -4,11 +4,9 @@ class CreateProjects < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :url
       t.string :github
-      t.text :technologies
       t.text :description
       t.text :difficulties
       t.text :solution
-      t.text :features
 
       t.timestamps
     end
