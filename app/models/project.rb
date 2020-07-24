@@ -12,6 +12,10 @@ class Project < ApplicationRecord
     index.odd? ? "left" : "right"
   end
 
+  def right_or_left_fade(index)
+    index.odd? ? "right" : "left"
+  end
+
   def get_first_item(index)
     return "active" if index == 0
   end
