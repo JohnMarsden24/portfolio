@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
   root to: "pages#home"
   get "/about", to: "pages#about"
-  get 'download_pdf', to: "pages#download_pdf"
-  get "/contact", to: "contacts#new", as: 'contact'
   get "/admin_home", to: "admin#home"
   resources :projects, param: :slug
-  resources :contacts, only: [:create]
 
   devise_for :users, skip: [:sessions, :registrations, :passwords]
 
